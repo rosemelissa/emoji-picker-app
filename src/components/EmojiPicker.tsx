@@ -1,8 +1,8 @@
 import { useState } from 'react';
 
 function EmojiPicker(): JSX.Element {
-    const [previousFavourite, rerenderPreviousFavourite] = useState('');
-    const [currentFavourite, rerenderCurrentFavourite] = useState('');
+    const [previousFavourite, rerenderPreviousFavourite] = useState<string>();
+    const [currentFavourite, rerenderCurrentFavourite] = useState<string>();
 
     const handleHappy = () => {
         rerenderPreviousFavourite(currentFavourite);
